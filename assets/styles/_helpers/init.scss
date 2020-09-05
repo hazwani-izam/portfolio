@@ -1,0 +1,213 @@
+// PORTFOLIO COLORS
+$darkRed: #1c000c;
+$red: #350017;
+$brightRed: #861522;
+$peach: #ffccb3;
+$white: #fff;
+$black: #000;
+$grey: #3a3a3a;
+$peach: #f8a678;
+
+$gradientRed: rgba(192,55,91,1);
+$gradientOrange: rgba(232,174,93,1);
+$gradient: linear-gradient(90deg, $gradientRed 0%, $gradientOrange 100%);
+
+
+// FACEBOOK COLORS
+$fbBlack: #262626;
+$fbGrey: #737373;
+
+$fsfpro: 'SF-Pro','Helvetica LT','Helvetica',Helvetica,Arial,sans-serif;
+$fsfproBold: 'SF-Pro-Bold','Helvetica LT','Helvetica',Helvetica,Arial,sans-serif;
+$fsfproSemiBold: 'SF-Pro-SemiBold','Helvetica LT','Helvetica',Helvetica,Arial,sans-serif;
+$fBrush: 'Brush','Helvetica LT','Helvetica',Helvetica,Arial,sans-serif;
+
+@font-face {
+  font-family: 'SF-Pro';
+  src:  url("font/SFProText-Regular.eot") format("eot"),
+        url("font/SFProText-Regular.woff") format("woff"),
+        url("font/SFProText-Regular.ttf") format("truetype"),
+        url("font/SFProText-Regular.svg#SFProText-Regular") format("svg"); }
+
+@font-face {
+  font-family: 'SF-Pro-Bold';
+  src:  url("font/SFProText-Bold.eot") format("eot"),
+        url("font/SFProText-Bold.woff") format("woff"),
+        url("font/SFProText-Bold.ttf") format("truetype"),
+        url("font/SFProText-Bold.svg#SFProText-Bold") format("svg"); }
+
+@font-face {
+  font-family: 'SF-Pro-SemiBold';
+  src:  url("font/SFProText-Semibold.eot") format("eot"),
+        url("font/SFProText-Semibold.woff") format("woff"),
+        url("font/SFProText-Semibold.ttf") format("truetype"),
+        url("font/SFProText-Semibold.svg#SFProText-Semibold") format("svg"); }
+
+@font-face {
+  font-family: 'Brush';
+  src:  url("font/Brush.eot") format("eot"),
+        url("font/Brush.woff") format("woff"),
+        url("font/Brush.ttf") format("truetype"),
+        url("font/Brush.svg#Brush") format("svg"); }
+
+button.close {
+  margin-right: 1rem;
+}
+// Buttons
+
+a{
+  text-decoration: none;
+  &:hover{
+    text-decoration: none;
+  }
+}
+
+.btn{
+  font-weight:500;
+-webkit-animation-duration: 3s;
+-o-animation-iteration-count: infinite;}
+
+.btn, .btn-primary, .btn-secondary, .btn:hover, .btn-primary:hover, .btn-secondary:hover{
+  font-size: 1.1rem;
+  transition: 0.3s;
+}
+
+.btn-primary{
+  background-color: $darkRed;
+  border-color: $darkRed;
+  color: $white;
+}
+
+.btn-primary:hover {
+  background-color: $red;
+  border-color: $red;
+  color: $white;
+}
+
+.btn-secondary{
+  background-color: transparent;
+  border-color: $peach;
+  color: $peach;
+}
+
+.btn-secondary:hover {
+  background-color: $peach;
+  border-color: $peach;
+  color:$darkRed;
+}
+
+.btn-secondary:active{
+  border: 1px solid $peach;
+  color: $peach
+}
+
+.navbar-toggle, .navbar-toggler:focus, .navbar-toggler:active, button:focus, a, a:focus, a:active, .btn-primary:not(:disabled):not(.disabled):active, .btn-primary:not(:disabled):not(.disabled):active{
+  border: none;
+  outline: 0;
+  color: unset;
+  background-color: unset;
+  border-color: unset;
+  box-shadow: none;
+}
+
+body{
+  overflow-x: hidden;
+}
+
+img{
+  width: 100%;
+  display: block;
+}
+
+
+section{
+  padding-bottom: 5rem;
+}
+
+// Back to Top Button
+
+
+#return-to-top {
+  position:fixed;
+  bottom:30px;
+  right:30px;
+  border:2px solid $peach;
+  width:50px;
+  height:50px;
+  display:block;
+  text-decoration:none;
+  -webkit-border-radius:35px;
+  -moz-border-radius:35px;
+  border-radius:35px;
+  display:none;
+
+  i {
+  color:$peach;
+  margin:0;
+  position:relative;
+  left:16px;
+  top:10px;
+  font-size:24px;
+
+}
+
+  &:hover {
+    border:2px solid $red
+  }
+
+  &:hover i {
+    color:$red;
+    top:5px
+  }
+
+  @media all and (max-width: 425px) {
+    display:none!important;
+  }
+}
+
+#return-to-top, #return-to-top i{
+  -webkit-transition:all .3s ease;
+  -moz-transition:all .3s ease;
+  -ms-transition:all .3s ease;
+  -o-transition:all .3s ease;
+  transition:all .3s ease;
+}
+
+video {
+  width: 100%;
+  height: auto;
+  &:active, &:focus, &:focus-within, &:hover, &:visited{
+    border: none;
+    outline: 0;
+  }
+}
+
+::-moz-selection { /* Code for Firefox */
+  color: $white;
+  background: $red;
+}
+
+::selection {
+  color: $white;
+  background: $peach;
+}
+
+h1{margin-top: 3rem;}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+	width: 8px;
+}
+
+::-webkit-scrollbar-track {
+	background: $darkRed;
+}
+
+::-webkit-scrollbar-thumb {
+	background: $brightRed;
+  transition: all 0.3s;
+}
+
+::-webkit-scrollbar-thumb:hover {
+	background: $peach;
+}

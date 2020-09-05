@@ -1,0 +1,174 @@
+// Reset Stylings
+.card-header,.card-header:first-child, .accordion > .card > .btn, button{
+    background-color: transparent;
+    margin: 0;
+    border: 0;
+    border-radius: 0;
+    text-decoration: none;
+}
+
+
+.accordion button {
+    border: 0;
+    margin:0;
+    padding:0;
+    text-decoration:none
+}
+
+.list-group-item, .list-group-item.active {
+    border: 0;
+    margin-bottom: 0;
+    color: $white;
+}
+
+// Accordion cosmetics
+
+.accordion{
+  h3, h4, h5, h6{
+    font-family: $fsfpro;
+    margin-bottom: 5px;
+  }
+  h2{font-size:0.8rem;}
+  h3, h4, h5, h6, p{font-size: 0.8rem;}
+  h5{color: $brightRed;}
+  h6{color: $peach;}
+  h2{
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 6.5%;
+    margin: 0;
+  }
+}
+
+// Sidebar cosmetics
+
+.accordion-trigger {
+     color:$white;
+     text-decoration:none;
+     opacity: 0.7;
+     background: transparent;
+     padding: 0.2rem 1.25rem;
+     cursor: pointer;
+
+     &.active, &:hover{
+       opacity: 1;
+       background: transparent
+     }
+
+     &.active, &.active:hover{
+       color:$peach;
+       font-family:$fsfproBold;
+     }
+
+     &:hover{
+       color:$white;
+     }
+
+     @media only screen and (max-width: 991px) {
+       font-size:.8rem
+     }
+
+}
+
+.sidebar{
+  position: sticky;
+  top: 90px;
+}
+
+
+
+// Accordion cosmetics
+
+.accordion{
+  .card *, .card-body *, .card-header *{
+    &:focus, &:active, &:hover, &:visited, &:focus-within{
+      border: none;
+      outline: none;
+      filter: none;
+      box-shadow: 0 0 0 0 rgba(0, 0, 0, 0) ;
+      outline: -webkit-focus-ring-color auto 0 ;
+    }
+  }
+}
+
+.accordion  {
+  a{
+    transition: 0.3s;
+    &:hover{
+      color: $peach;
+      transition: 0.3s;
+    }
+  }
+  .card-body{
+    margin-top: -2rem;
+    background: rgb(0,0,0, 0.3);
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+  }
+  .card-header {
+    padding: 0;
+    cursor: default;
+    img{
+      width: 65%;
+      margin: auto;
+    }
+    h2{
+      text-align: center;
+      color: $peach;
+      font-family: $fBrush;
+    }
+  }
+  .card{
+    margin: 0 0 2rem 0;
+    border: none;
+    background-color: transparent;
+    border-radius: 0;
+    opacity: 0.8;
+    &.active, &:hover{
+      opacity: 1
+    }
+  }
+  .card-header:hover, .btn-link:hover {
+       text-decoration: none;
+  }
+}
+
+@media only screen and (min-width: 350px) {
+  .accordion{
+    h2{
+      font-size:0.9rem;
+      bottom: 6.5%;
+    }
+  }
+}
+
+@media only screen and (min-width: 576px) {
+  .accordion{
+    h3, h4, h5, h6, p{font-size: 0.9rem;}
+    .card-header {
+      img{
+        width: 55%;
+      }
+    }
+    h2{
+      font-size:1.1rem;
+      bottom: 10%;
+    }
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .accordion{
+    h3, h4, h5, h6, p{font-size: 0.95rem;}
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  .accordion{
+    h3, h4, h5, h6, p{font-size: 1rem;}
+    .card{
+    margin: 0 0 5rem 0;
+    }
+  }
+}

@@ -1,0 +1,10 @@
+$uobTaupe: #DDD6D0;
+
+.bg-uob-retail{
+  background: url("../images/portfolio/uob-retail/UOB-Retail_BG.jpg"), $uobTaupe;
+  background-repeat: no-repeat;
+}
+
+.bg-uob-taupe{
+  background: $uobTaupe;
+}

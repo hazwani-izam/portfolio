@@ -1,0 +1,54 @@
+.pause{
+  animation-play-state: paused;
+}
+
+.chart-stroke{
+  animation-name: dash;
+  animation-duration: 1s;
+}
+
+.bar{
+  animation-name: grow-graph;
+  animation-duration: 1s;
+}
+
+.dot{
+  animation-name: grow-dot;
+  animation-duration: 0.5s;
+}
+
+.graph-fade{
+  animation-name: graph-fade;
+  animation-duration: 0.5s;
+}
+
+.map{
+  animation-duration: 0.5s;
+}
+
+.map-1{animation-delay: 0.2s;}
+.map-2{animation-delay: 0.4s;}
+.map-3{animation-delay: 0.6s;}
+.map-4{animation-delay: 0.8s;}
+.map-5{animation-delay: 1s;}
+
+.chart-stroke, .bar, .dot, .pointer-text, .map{
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: backwards;
+}
+
+@keyframes dash {
+  from {stroke-dashoffset: 1000;}
+}
+
+@keyframes grow-graph {
+  from{height: 0%;}
+}
+
+@keyframes grow-dot {
+  from{transform: scale(0);}
+}
+
+@keyframes graph-fade {
+  from{opacity: 0;}
+}

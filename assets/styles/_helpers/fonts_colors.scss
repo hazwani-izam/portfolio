@@ -1,0 +1,89 @@
+html {
+  font-size: 18px; /* font-size 1em = 10px on default browser settings */
+}
+
+body {
+  font-family: $fsfpro;
+  color: $white; }
+
+strong,.bold,.text-bold {
+  font-family: $fsfproBold;
+  font-weight:500;}
+
+h1{font-family: $fBrush;}
+
+h1, h2, h3, h4, h5, h6,
+.h1, .h2, .h3, .h4, .h5, .h6 {
+  margin-bottom: 10px;
+  font-weight: 500;
+  line-height: normal;
+}
+
+h2, h3, h4, h5, h6,
+.h2, .h3, .h4, .h5, .h6 {
+  font-family: $fsfproBold;
+}
+
+p,li {
+  margin-bottom: 10px;
+  font-family: $fsfpro;
+  font-weight: 500;
+  line-height: normal;
+}
+
+h1,.h1{font-size:3rem; color: $peach;}
+h2,.h2{font-size:2.5rem}
+h3,.h3,.font-xl{font-size:1.8rem}
+h4,.h4,.font-lg{font-size:1.2rem}
+h5,.h5,.font-md{font-size:1.1rem}
+h6,.h6{font-size:1rem}
+p,li{font-size:1.1rem;margin-bottom: 13px;}
+p:last-child,li:last-child{margin-bottom: 0;}
+
+
+@media only screen and (min-width: 1920px) {
+  h1,.h1{font-size:3.5rem}
+  h2,.h2{font-size:2.8rem}
+  h3,.h3,.font-xl{font-size:2.1rem}
+  h4,.h4,.font-lg{font-size:1.5rem}
+  h5,.h5,.font-md{font-size:1.375rem}
+  h6,.h6{font-size:1.2rem}
+  p,li{font-size:1.1875rem;}
+  small,.font-xs{font-size:0.875rem;line-height:1.1875rem;}
+
+}
+
+@media only screen and (max-width: 767px) {
+  .text-m-center {
+    text-align: center !important
+  }
+
+  .text-m-left {
+    text-align: left !important
+  }
+}
+
+// Ligatures (fi)
+h1,h2,h3,h4,h5,h6,p,.h1,.h2,.h3,.h4,.h5,.h6,.p{
+font-feature-settings: "liga" 0, "clig" 0;
+-moz-font-feature-settings: "liga" 0, "clig" 0;
+-ms-font-feature-settings: "liga" 0, "clig" 0;
+-o-font-feature-settings: "liga" 0, "clig" 0;
+-webkit-font-feature-settings: "liga" 0, "clig" 0;}
+
+// For removing <br> tags in mobile
+@media screen and (max-width:1080px) {
+  .rmv-md {
+    display: none;
+  }
+}
+
+@media screen and (min-width:375px) and (max-width:991px) {
+  .rmv-sm {
+    display: none;
+  }
+}
+
+.txt-orange{
+  color: $peach;
+}

@@ -1,0 +1,72 @@
+body{
+  background: linear-gradient(0deg, $darkRed 0%, $red 90%);
+  min-height: 100vh;
+}
+
+.bg-red-black{
+  background: linear-gradient(90deg, $black 0%, $darkRed 50%, $red 100%);
+}
+
+.bg-darkRed-red{
+  background: linear-gradient(0deg, $darkRed 0%, $red 100%);
+}
+
+.bg-darkRed-red-90{
+  background: linear-gradient(90deg, $darkRed 0%, $red 100%);
+}
+
+.bg-darkRed-black{
+  background: linear-gradient(180deg, $darkRed 0%, $black 100%);
+  min-height: 20rem;
+}
+
+.first-section{
+  margin-top: 1rem;
+}
+
+.bg-black{
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+#particles-js{
+  position: fixed;
+  height: 100%;
+  width: 100%;
+}
+
+.bg-vitagen{
+  background: url("../images/portfolio/vitagen-social/Vitagen-BG.png");
+}
+
+.bg-eden{
+  background: url("../images/portfolio/eden-group/EDEN_BG.png");
+  background-size: 100%;
+}
+
+.bg-stt{
+  background: url("../images/portfolio/stt/STT_BG.png");
+  background-size: 100%;
+}
+
+.bg-dino{
+  background: url("../images/portfolio/cosmo-dinos/Dino_BG.png");
+  background-size: 100%;
+}
+
+.bg-muay-thai-burger{
+  background: url("../images/portfolio/muay-thai-burger/Muay-Thai-Burger_BG@2x.jpg");
+  background-size: 100%;
+}
+
+.bg-wolfpack{
+  background: url("../images/portfolio/wolfpack/Wolfpack_BG@2x.png");
+  background-size: 100%;
+}
+
+.bg-scientist{
+   background: url("../images/portfolio/the-scientist/Scientist_BG.png");
+}
+
+.iphone-x {
+  background-attachment: scroll;
+}

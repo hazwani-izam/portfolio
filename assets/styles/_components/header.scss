@@ -1,0 +1,114 @@
+// reset
+
+[type=button]{
+  -webkit-appearance: unset!important;
+}
+
+.custom-toggler .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(232,174,93,1)' stroke-width='3' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+
+.navbar-dark .navbar-toggler {
+    border: 0;
+    position: absolute;
+    top: 5px;
+    right: 0;
+}
+
+
+#mainNav, .main-menu{z-index: 1019;}
+
+// styles
+
+.logo-link{
+  .logo-container{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    .logo, .logo-txt{
+      display: block;
+      float: left;
+    }
+    .logo{
+      height: 45px;
+      width: auto;
+    }
+    .logo-txt{
+      margin-left: 20px;
+      font-family: $fsfproBold;
+      background: $gradient;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      white-space: nowrap;
+    }
+  }
+}
+
+
+
+@media (min-width: 992px){
+  .navbar-expand-lg .navbar-nav .nav-link {
+      padding-right: 1rem;
+      padding-left: 1rem;
+  }
+}
+
+
+
+.main-menu{
+  background: transparent;
+  color: $white;
+  z-index: 999;
+  position: sticky;
+  top: 0;
+  padding: 0.6rem 0;
+  transition: all 0.5s;
+
+  &.scrolled{
+    background: $darkRed;
+    -webkit-box-shadow: 0px 3px 16px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 3px 16px 0px rgba(0,0,0,0.75);
+    box-shadow: 0px 3px 16px 0px rgba(0,0,0,0.75);
+  }
+
+  .nav-item{
+    margin: 0;
+    font-size: 1rem;
+  }
+
+  .nav-item a{
+    color: $white;
+    text-align: center;
+    opacity: 0.7;
+    height: 100%;
+    transition: all 0.5s;
+  }
+
+  .nav-item a:hover{
+    opacity: 1
+  }
+
+  .nav-item.active a{
+    font-family: $fsfproBold;
+    background: $gradient;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    opacity: 1;
+  }
+}
+
+.navbar-nav{
+  padding-top: 0;
+
+  li a{
+    padding:1rem 1rem;
+
+    @media all and (min-width: 992px) {
+      padding:0 1rem;
+    }
+  }
+}
+
+.modal {
+    padding-right: 0px !important;
+}

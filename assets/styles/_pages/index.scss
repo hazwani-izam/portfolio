@@ -1,0 +1,24 @@
+.portfolio-accordion{
+  .tags{
+    background: $brightRed;
+    width: 100%;
+    font-size: 0.6rem;
+    padding: 10px 20px;
+    transition: all 0.5s;
+    &:hover{
+      background: $red;
+    }
+  }
+  .card-body{
+    background: $red;
+  }
+
+}
+
+.cave{
+  position: absolute;
+  top: 0;
+}
+
+#worksCarousel{
+}

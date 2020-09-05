@@ -1,0 +1,96 @@
+.about-accordion{
+
+  padding-left: 0rem;
+
+  @media screen and (min-width:992px) {
+      padding-left: 2.5rem;
+  }
+
+  .timeline-text-content {
+    padding-left: 50px;
+    ul{
+      padding-left: 18px;
+      color: $brightRed;
+      padding-bottom: 10px;
+      li{
+          list-style-type: disc;
+          overflow: unset;
+          padding: 0;
+          margin: 0;
+      }
+    }
+  }
+}
+
+.about-timeline{
+  .v-timeline{
+      margin-top: 30px;
+      padding: 0;
+      ul{
+          position: relative;
+      }
+      li{
+          list-style-type: none;
+          padding: 0 0 30px;
+          position: relative;
+          overflow: hidden;
+      }
+      .v-timeline-icon{
+        &:before{
+          content: ' ';
+          height: 15px;
+          position: absolute;
+          top: 0px;
+          left: 0;
+          width: 15px;
+          border-radius: 50%;
+          background: $peach;
+        }
+          &:after {
+              content: ' ';
+              border-left: 2px solid $peach;
+              display: inline-block;
+              position: absolute;
+              left: 6px;
+              height: 500px;
+              z-index: 400;
+              top: 15px;
+          }
+          &.v-last{
+              &:before{
+                  background: $peach;
+              }
+              &:after{
+                  border-left: 2px solid $peach;
+              }
+          }
+
+      }
+      .timeline-text{
+        padding-left: 40px;
+      }
+  }
+}
+
+.about{
+  .accordion{
+    .card-body{
+      padding: 3.25rem 3rem 1.25rem;
+    }
+  }
+  li.col{
+    margin-bottom: 0;
+  }
+}
+
+.progress {
+    background-color: transparent;
+    border-radius: 0rem;
+    border: 1px solid $peach;
+    height: 1.1rem;
+    margin-bottom: 30px;
+}
+
+.progress-bar {
+    background-color: $peach;
+}

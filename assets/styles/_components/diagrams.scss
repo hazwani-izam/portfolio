@@ -1,0 +1,341 @@
+.diagram-section{
+  width: 100%;
+  max-width: 1920px;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+.diagram{
+  // FONTS
+  .label, .bar-label, .marker{
+    font-size: 0.5rem;
+    color: $grey;
+  }
+
+  .marker, .bar, .legend-info, .legend-label{
+    font-size: 0.5rem;
+  }
+
+  .diagram-title{
+    font-size: 0.8rem;
+  }
+
+  @media only screen and (min-width: 540px) {
+    .label, .bar-label{
+      font-size: 0.7rem;
+    }
+
+    .marker, .bar, .legend-info, .legend-label{
+      font-size: 0.6rem;
+    }
+    .diagram-title{
+      font-size: 0.9rem;
+    }
+  }
+
+  @media only screen and (min-width: 768px) {
+    .label, .bar-label{
+      font-size: 1rem;
+    }
+    .marker, .bar, .legend-info, .legend-label{
+      font-size: 0.9rem;
+    }
+    .diagram-title{
+      font-size: 0.95rem;
+    }
+  }
+}
+
+
+
+.diagram{
+  width: 100%;  // change width or max-width to "squeeze" graph horizontally
+  height: 290px ;    // change height to "squeeze" graph vertically
+  max-width: 1080px;
+  margin: 0 auto;
+}
+
+.graph-wrapper{
+  width: 95%;
+  max-width: 1080px;
+  display: block;
+  margin: 0 auto;
+  &.graph-wrapper-label{
+    margin-left: 5%;
+    height: 2rem;
+  }
+}
+
+.graph-wrapper, .y-axis{
+  height: 100%;
+  float: left;
+}
+
+.graph-container, .markers-container{
+  height: 100%;
+  position: relative;
+  display: block;
+  float: left;
+}
+.y-axis{
+  position: relative;
+  width: 5%;
+  .label{
+    position: absolute;
+    width: 500px; // same as .graph-wrapper height
+    top: 50%;
+    left: 50%;
+    transform:  translateX(-50%) translateY(-50%) rotate(-90deg);
+    text-align: center;
+  }
+}
+
+
+.graph-container{
+  width: 90%;
+}
+
+.graph-container-3{
+  width: 90%;
+}
+
+.markers-container{
+  width: 10%;
+  .marker{
+    position: absolute;
+    width: 100%;
+    text-align: right;
+    margin-bottom: -18.5%;
+    padding-right: 15px;
+  }
+}
+
+.lines, .bars-wrapper, .dots-wrapper, .markers, .chart{
+  width: 100%;
+  height: 100%;
+}
+
+.lines{
+  .line{
+    position: absolute;
+    border-top: 1px solid $grey;
+    width: 100%;
+    height: 0;
+  }
+
+  .line-black{
+    border-top: 2px solid $grey;
+    z-index: 1;
+  }
+}
+
+// for flexing
+
+.bars-wrapper, .dots-wrapper{
+  height: 100%;
+  display: flex;
+  justify-content: space-around;
+  position: absolute;
+  bottom: 0;
+}
+
+.bars, .dots{
+  height: 100%;
+  display: flex;
+  float: left;
+  margin: 0 2%;
+}
+
+.bar, .dot{
+  width: 100%;
+  position: relative;
+  float: left;
+  margin-top: auto;
+}
+
+.bars-wrapper{
+  .bars{
+    width: 15%;
+    bottom: 0;
+
+    .bar-3{
+      width: calc(100%/3);
+    }
+    .bar{
+      .bar-text{
+        text-align: center;
+        color: #fff;
+        margin-top: 3px;
+      }
+      .pointer{
+        position: absolute;
+        top:3%;
+        right: 50%;
+        width: 250px;
+        height: 1rem;
+        text-align: right;
+        float: right;
+        .pointer-text{
+          width: 60%;
+          padding-right: 0.5em;
+        }
+        span{
+          width: 40%;
+          height: 70%;
+          border-bottom: 1px solid $grey;
+          display: inline-block;
+          float: right;
+        }
+      }
+    }
+    .bar-label{
+      width: 100%;
+      text-align: center;
+    }
+  }
+}
+
+.dots-wrapper{
+  .dot{
+    width: 0.5em;
+    height: 0.5em;
+    border-radius: 100%;
+    margin-bottom: -0.25em; // width / 2
+  }
+}
+
+
+.legend-wrapper{
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  margin: 0rem auto 1rem;
+  .legend-box, .legend-label, .legend{
+    float: left;
+  }
+  .legend{
+    margin: 0 3%;
+  }
+  .legend-box{
+    width: 12px;
+    height: 12px;
+    display: block;
+    margin-right: 8px;
+    position: relative;
+    .circle, .stroke{
+      position: absolute;
+      margin: 0 auto;
+      left: 0;
+      right: 0;
+      top: 0;
+      bottom: 0;
+    }
+  }
+  .legend-label{
+    line-height: 12px;
+  }
+  .legend-info{
+    text-align: center;
+  }
+}
+
+#chart {
+  width: 90%;
+  position: absolute;
+  margin: auto;
+  left: 0;
+  right: 0;
+  top: 0;
+}
+
+.chart-stroke {
+  fill:none;
+  stroke:#f8a48d;
+  stroke-miterlimit:10;
+  stroke-width:3px;
+  stroke-dasharray: 1000;
+  stroke-dashoffset: 0;
+}
+
+.map-wrapper{
+  width: auto;
+  height: 150px;
+  margin: 2rem auto;
+  position: relative;
+  img{
+    position: absolute;
+    width: auto;
+    max-height: 150px; // same as .map-wrapper height
+    margin: auto;
+    left: 0;
+    right: 0;
+  }
+}
+
+#diagram3{
+  .legend-wrapper {
+    width: 100%;
+    @media only screen and (min-width: 1140px) {
+      width: 65%;
+      max-width: 820px;
+    }
+    .legend{
+      width: 33%
+    }
+  }
+}
+
+
+@media only screen and (min-width: 768px) {
+
+  .diagram{
+    width: 90%;
+  }
+  .graph-wrapper{
+    &.graph-wrapper-label{
+      height: 2rem;
+    }
+  }
+  .legend-wrapper{
+    .legend-box{
+      width: 23px;
+      height: 23px;
+    }
+    .legend-label{
+      line-height: 23px;
+    }
+  }
+  .dots-wrapper{
+    .dot{
+      width: 0.8em;
+      height: 0.8em;
+      margin-bottom: -0.4em; // width / 2
+    }
+  }
+  .map-wrapper{
+    height: 250px;
+    img{
+      max-height: 250px;
+    }
+  }
+}
+
+@media only screen and (min-width: 992px) {
+
+}
+
+@media only screen and (min-width: 1140px) {
+  .map-wrapper{
+    height: 450px;
+    img{
+      max-height: 450px;
+    }
+  }
+}
+
+.diagram-section video, .masthead{
+  margin: 0 auto 100px;
+  display:block;
+  width: 1180px;
+  height: 332px;
+}
