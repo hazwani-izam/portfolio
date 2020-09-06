@@ -1,0 +1,29 @@
+footer{
+  padding: 1rem 0 2rem;
+  .container{
+    border-top: 1px solid $brightRed;
+  }
+  .socials{
+    display: flex;
+    justify-content: flex-start;
+    margin-top: 1em;
+    a{
+      display: flex;
+      width: 35px;
+      margin-right: 20px;
+      &:last-child{margin-right: 0;}
+    }
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  footer{
+    .socials{
+      justify-content: flex-end;
+      margin-top: 0;
+      a{
+        margin-right: 10px;
+      }
+    }
+  }
+}

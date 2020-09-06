@@ -3,11 +3,11 @@ html {
 }
 
 body {
-  font-family: $fsfpro;
+  font-family: $SFPro;
   color: $white; }
 
-strong,.bold,.text-bold {
-  font-family: $fsfproBold;
+strong,.bold {
+  font-family: $SFProBold;
   font-weight:500;}
 
 h1{
@@ -16,6 +16,18 @@ h1{
   color: $peach;
   @media only screen and (min-width: 768px) {
     margin-top: 3rem
+  }
+}
+
+.font-brush{
+  font-family: $fBrush;
+  color: $peach;
+}
+
+a{
+  transition: all 0.5s;
+  &:hover{
+    color: $peach;
   }
 }
 
@@ -28,45 +40,55 @@ h1, h2, h3, h4, h5, h6,
 
 h2, h3, h4, h5, h6,
 .h2, .h3, .h4, .h5, .h6 {
-  font-family: $fsfproBold;
+  font-family: $SFProBold;
 }
 
 p,li {
   margin-bottom: 10px;
-  font-family: $fsfpro;
+  font-family: $SFPro;
   font-weight: 500;
   line-height: normal;
   margin-bottom: 13px;
   &:last-child{margin-bottom: 0;}
 }
 
-h1,.h1{font-size:1.8rem;}
-h2,.h2{font-size:1.4rem}
-h3,.h3,.font-xl{font-size:1.2rem}
-h4,.h4,.font-lg{font-size:1.1rem}
-h5,.h5,.font-md{font-size:1.0rem}
-h6,.h6{font-size:0.95rem}
-p,li{font-size:0.9rem;} 
+h1,.h1{font-size:1.5rem;}
+h2,.h2{font-size:1.2rem}
+h3,.h3,.font-xl{font-size:1.1rem}
+h4,.h4,.font-lg{font-size:1.0rem}
+h5,.h5,.font-md{font-size:0.9rem}
+h6,.h6{font-size:0.8rem}
+p,li{font-size:0.7rem;}
+
+@media only screen and (min-width: 768px) {
+  h1,.h1{font-size:2.5rem;}
+  h2,.h2{font-size:1.4rem}
+  h3,.h3,.font-xl{font-size:1.2rem}
+  h4,.h4,.font-lg{font-size:1.1rem}
+  h5,.h5,.font-md{font-size:1.0rem}
+  h6,.h6{font-size:0.9rem}
+  p,li{font-size:0.8rem;}
+}
 
 @media only screen and (min-width: 992px) {
   h1,.h1{font-size:3rem;}
-  h2,.h2{font-size:2.5rem}
-  h3,.h3,.font-xl{font-size:1.8rem}
+  h2,.h2{font-size:1.5rem}
+  h3,.h3,.font-xl{font-size:1.3rem}
   h4,.h4,.font-lg{font-size:1.2rem}
   h5,.h5,.font-md{font-size:1.1rem}
   h6,.h6{font-size:1rem}
-  p,li{font-size:1.1rem;}
+  p,li{font-size:0.9rem; line-height: 1.4rem;}
 }
 
 
 @media only screen and (min-width: 1920px) {
   h1,.h1{font-size:3.5rem}
-  h2,.h2{font-size:2.8rem}
-  h3,.h3,.font-xl{font-size:2.1rem}
-  h4,.h4,.font-lg{font-size:1.5rem}
-  h5,.h5,.font-md{font-size:1.375rem}
-  h6,.h6{font-size:1.2rem}
-  p,li{font-size:1.1875rem;}
+  h2,.h2{font-size:2.0rem}
+  h3,.h3,.font-xl{font-size:1.5rem}
+  h4,.h4,.font-lg{font-size:1.3rem}
+  h5,.h5,.font-md{font-size:1.2rem}
+  h6,.h6{font-size:1.1rem}
+  p,li{font-size:1rem;}
   small,.font-xs{font-size:0.875rem;line-height:1.1875rem;}
 }
 

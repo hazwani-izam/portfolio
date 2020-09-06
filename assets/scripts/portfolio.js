@@ -64,7 +64,7 @@ var _portfolioArr = [
         'tags':'Advertising'
       },
       {
-        'title':'Red Cross Annual Report',
+        'title':'Red Cross',
         'image':'Red-Cross@2x.jpg',
         'link':'red-cross',
         'tags':'Editorial'
@@ -117,9 +117,6 @@ function populatePortfolio () {
 
 
   $('.portfolio-trigger').click(function() {
-    $('.portfolio-trigger').removeClass('active');
-    $(this).addClass('active');
-
 
     $('#accordionContainerPortfolio').show();
 
@@ -133,19 +130,7 @@ function populatePortfolio () {
 }
 
 
-
 //Init
 $(function() {
-    populatePortfolio ()
-    $('a[href*="#"]').on('click', function(e) {
-      e.preventDefault()
-
-      $('html, body').animate(
-        {
-          scrollTop: $($(this).attr('href')).offset().top,
-        },
-        300,
-        'linear'
-      )
-    })
+    populatePortfolio();
 });

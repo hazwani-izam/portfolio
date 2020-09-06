@@ -17,9 +17,9 @@ $gradient: linear-gradient(90deg, $gradientRed 0%, $gradientOrange 100%);
 $fbBlack: #262626;
 $fbGrey: #737373;
 
-$fsfpro: 'SF-Pro','Helvetica LT','Helvetica',Helvetica,Arial,sans-serif;
-$fsfproBold: 'SF-Pro-Bold','Helvetica LT','Helvetica',Helvetica,Arial,sans-serif;
-$fsfproSemiBold: 'SF-Pro-SemiBold','Helvetica LT','Helvetica',Helvetica,Arial,sans-serif;
+$SFPro: 'SF-Pro','Helvetica LT','Helvetica',Helvetica,Arial,sans-serif;
+$SFProBold: 'SF-Pro-Bold','Helvetica LT','Helvetica',Helvetica,Arial,sans-serif;
+$SFProSemiBold: 'SF-Pro-SemiBold','Helvetica LT','Helvetica',Helvetica,Arial,sans-serif;
 $fBrush: 'Brush','Helvetica LT','Helvetica',Helvetica,Arial,sans-serif;
 
 @font-face {
@@ -152,11 +152,11 @@ section{
 }
 
   &:hover {
-    border:2px solid $red
+    border:2px solid $brightRed;
   }
 
   &:hover i {
-    color:$red;
+    color:$brightRed;
     top:5px
   }
 
@@ -209,7 +209,13 @@ video {
 ::-webkit-scrollbar-thumb:hover {
 	background: $peach;
 }
-// 
+
+.list-margin-small{
+  li{
+    margin-bottom: 5px;
+  }
+}
+//
 // .anchor {
 //   padding-top: 105px;
 // }

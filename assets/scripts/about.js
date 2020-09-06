@@ -53,7 +53,7 @@ function populateAbout () {
 
     var _aboutItems = _aboutArr[i].aboutItem;
     for( var j=0; j<_aboutItems.length; j++) {
-      _sidebarStr += '<a href="#card'+_accordionId+'_'+(j+1)+'"><div class="about-trigger accordion-trigger list-group-item" data-target="'+ (i+1) +'" id="aboutsideItem_'+(i+1)+'">'+_aboutItems[j].title+'</div></a>';
+      _sidebarStr += '<a href="#card'+_accordionId+'_'+(j+1)+'"><div class="portfolio-trigger accordion-trigger list-group-item" data-target="'+ (i+1) +'" id="aboutsideItem_'+(i+1)+'">'+_aboutItems[j].title+'</div></a>';
       _accordionStr += '<div data-aos="fade-up" data-aos-duration="500" class="card active" id="card'+_accordionId+'_'+(j+1)+'"> <button aria-controls="'+_accordionId+'_'+(j+1)+'" aria-expanded="false" class="btn btn-link" data-target="#'+_accordionId+'_'+(j+1)+'" data-toggle="" type="button"> <div class="card-header" id="'+_accordionId+'-'+(j+1)+'"> <div class="row justify-content-between align-items-center"> <div class="col"> <h2>'+_aboutItems[j].title+'</h2> <img src="assets/images/header@2x.png"> </div> </div> </div> </button> <div aria-labelledby="'+_accordionId+'-'+(j+1)+'" class=" show " id="'+_accordionId+'_'+(j+1)+'"> <div class="card-body bg-black"> '+_aboutItems[j].content+' </div> </div> </div>';
     }
       _accordionStr +=  '</div>';
@@ -62,10 +62,7 @@ function populateAbout () {
   $('#accordionContainer').html(_accordionStr);
 
 
-  $('.about-trigger').click(function() {
-    $('.about-trigger').removeClass('active');
-    $(this).addClass('active');
-
+  $('.portfolio-trigger').click(function() {
 
     $('#accordionContainer').show();
 
@@ -82,16 +79,5 @@ function populateAbout () {
 
 //Init
 $(function() {
-    populateAbout ()
-    $('a[href*="#"]').on('click', function(e) {
-      e.preventDefault()
-
-      $('html, body').animate(
-        {
-          scrollTop: $($(this).attr('href')).offset().top,
-        },
-        300,
-        'linear'
-      )
-    })
+    populateAbout();
 });
