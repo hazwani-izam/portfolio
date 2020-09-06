@@ -53,12 +53,12 @@
   h3, h4, h5{color: $fbGrey;}
   h2{font-family:$fsfproBold;}
   h5{font-family:$fsfproBold;}
-  h3, h4, h6, p{font-family: $fsfpro;}
+  h3, h4, h6, p, li{font-family: $fsfpro;}
   h4{line-height: 30px;}
 
   // font sizes
-  h2{font-size: 1.0rem;}
-  h3, h4, h5, p{font-size: 0.9rem;}
+  h2{font-size: 0.9rem;}
+  h3, h4, h5, p{font-size: 0.8rem;}
   p{margin-bottom: 0.7em}
   p:last-child{margin: 0;}
 
@@ -66,14 +66,14 @@
 
 
   @media (min-width: 576px){
-    h2{font-size: 1.1rem;}
-    h3, h4, h5, p{font-size: 1.0rem;}
+    h2{font-size: 1.0rem;}
+    h3, h4, h5, p, li{font-size: 0.95rem;}
   }
 
 
   @media (min-width: 992px){
-    h2{font-size: 1.2rem;}
-    h3, h4, h5, p{font-size: 1.1rem;}
+    h2{font-size: 1.1rem;}
+    h3, h4, h5, p, li{font-size: 1.0rem;}
   }
 
   .fb-header, .fb-copy, .fb-footer{
@@ -147,7 +147,7 @@
       display: inline-block;
     }
     img{
-      height: 30px;
+      height: 20px;
       width: auto;
     }
     .fb-footer-stats{

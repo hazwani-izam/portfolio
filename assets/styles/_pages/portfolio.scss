@@ -71,5 +71,11 @@
       height: 10px;
     }
   }
+}
 
+.portfolio-container {
+  padding: 1.5rem;
+  @media only screen and (min-width: 768px) {
+    padding: 3rem;
+  }
 }

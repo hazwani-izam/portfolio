@@ -24,7 +24,7 @@
     <meta name="Keywords" content="digital design, art direction, portfolio">
     <meta name="robots" content="index, follow">
     <meta name="author" content="Haz's Portfolio">
-    <link rel="icon" href="assets/images/favicon.ico" type="image/x-icon" sizes="16x16">
+    <link rel="icon" href="assets/images/kyra-favicon.ico" type="image/x-icon" sizes="16x16">
 
     <link rel="stylesheet" href="assets/styles/vendor/bootstrap4.5.0.min.css">
     <link rel="stylesheet" href="assets/styles/vendor/aos.css" />
@@ -34,16 +34,19 @@
 
 </head>
 
-<body>
+<body class="index">
     <!-- Main Menu -->
     <nav class="navbar navbar-expand-lg main-menu navbar-dark">
         <div class="container">
-            <a class="logo-link" href="index.html" target="_blank" title="Haz's Portfolio">
+            <a class="logo-link" href="index.html" title="Haz's Portfolio">
               <div class="logo-container">
                 <img class="logo" alt="Haz Logo" src="assets/images/kyra.svg">
                 <div class="logo-txt">Haz's Portfolio</div>
               </div>
             </a>
+            <button class="navbar-toggler custom-toggler" type="button" data-toggle="collapse" data-target="#mainNav">
+                <span class="navbar-toggler-icon "></span>
+            </button>
             <div class="navbar-collapse collapse w-100" id="mainNav">
                 <ul class="navbar-nav w-100 justify-content-end" id="navElements">
 
@@ -53,13 +56,9 @@
                     <li class="nav-item">
                         <a href="about.html" class="nav-link">About Me</a>
                     </li>
-
                 </ul>
             </div>
         </div>
-        <button class="navbar-toggler custom-toggler" type="button" data-toggle="collapse" data-target="#mainNav">
-            <span class="navbar-toggler-icon "></span>
-        </button>
     </nav>
 
     <!-- CONTENT STARTS HERE -->
@@ -85,7 +84,10 @@
               <div class="carousel-inner" role="listbox">
                   <div class="carousel-item active">
                       <div class="view">
-                          <a href="portfolio/uobam-invest.html"><img src="assets/images/portfolio/feature/Feature_UOBAM-Invest@2x.jpg" alt="UOBAM Invest Feature"></a>
+                          <a href="portfolio/uobam-invest.html">
+                            <img class="d-none d-md-block" src="assets/images/portfolio/feature/Feature_UOBAM-Invest@2x.jpg" alt="UOBAM Invest Feature">
+                            <img class="d-block d-md-none" src="assets/images/portfolio/feature/Feature_UOBAM-Invest_M@2x.jpg" alt="UOBAM Invest Feature">
+                          </a>
                           <div class="mask rgba-black-light"></div>
                       </div>
                       <div class="carousel-caption">
@@ -94,7 +96,10 @@
                   <div class="carousel-item">
                       <!--Mask color-->
                       <div class="view">
-                          <a href="portfolio/the-scientist.html"><img src="assets/images/portfolio/feature/Feature_The-Scientist@2x.jpg" alt="The Scientist Feature"></a>
+                          <a href="portfolio/the-scientist.html">
+                            <img class="d-none d-md-block" src="assets/images/portfolio/feature/Feature_The-Scientist@2x.jpg" alt="The Scientist Feature">
+                            <img class="d-block d-md-none" src="assets/images/portfolio/feature/Feature_The-Scientist_M@2x.jpg" alt="The Scientist Feature">
+                          </a>
                           <div class="mask rgba-black-strong"></div>
                       </div>
                       <div class="carousel-caption">
@@ -103,7 +108,10 @@
                   <div class="carousel-item">
                       <!--Mask color-->
                       <div class="view">
-                          <a href="portfolio/stt.html"><img src="assets/images/portfolio/feature/Feature_STT@2x.png" alt="The Scientist Feature"></a>
+                          <a href="portfolio/stt.html">
+                            <img class="d-none d-md-block" src="assets/images/portfolio/feature/Feature_STT@2x.png" alt="The Scientist Feature">
+                            <img class="d-block d-md-none" src="assets/images/portfolio/feature/Feature_STT_M@2x.png" alt="The Scientist Feature">
+                          </a>
                           <div class="mask rgba-black-strong"></div>
                       </div>
                       <div class="carousel-caption">

@@ -192,8 +192,6 @@ video {
   background: $peach;
 }
 
-h1{margin-top: 3rem;}
-
 /* Custom Scrollbar */
 ::-webkit-scrollbar {
 	width: 8px;
@@ -211,3 +209,16 @@ h1{margin-top: 3rem;}
 ::-webkit-scrollbar-thumb:hover {
 	background: $peach;
 }
+// 
+// .anchor {
+//   padding-top: 105px;
+// }
+
+// .anchor::before{
+//   display: block;
+//   content: " ";
+//   margin-top: -485px;
+//   height: 485px;
+//   visibility: hidden;
+//   pointer-events: none;
+// }
