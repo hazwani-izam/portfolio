@@ -17,7 +17,7 @@ var _aboutArr = [
       },
       {
         'title':'Co-Curricular Activities',
-        'content':'<div class="about-timeline"> <div class="row"> <div class="col"> <ul class="v-timeline"> <li class="col"> <span class="v-timeline-icon"></span> <div class="timeline-text"> <p>2012 - 2015</p> <div class="timeline-text-content"> <h5>Bukit Panjang Government High School</h5> <h6>Infocomm Club<br>Gamelan Ensemble<br>Student Council</h6> </div> </div> </li> <li class="col"> <span class="v-timeline-icon"></span> <div class="timeline-text"> <p>2017 - 2018</p> <div class="timeline-text-content"> <h5>Singapore Polytechnic</h5> <h6>Makeup Artiste Club</h6> </div> </div> </li> </ul> </div> </div> </div>'
+        'content':'<div class="about-timeline"> <div class="row"> <div class="col"> <ul class="v-timeline"> <li class="col"> <span class="v-timeline-icon"></span> <div class="timeline-text"> <p>2012 - 2015</p> <div class="timeline-text-content"> <h5>Bukit Panjang Government High School</h5> <h6>Infocomm Club<br>Gamelan Ensemble<br>Student Council</h6> </div> </div> </li> <li class="col"> <span class="v-timeline-icon"></span> <div class="timeline-text"> <p>2017 - 2018</p> <div class="timeline-text-content"> <h5>Singapore Polytechnic</h5> <h6>Makeup Artiste Club</h6> </div> </div> </li> </ul> </div> </div> </div>'
       },
       {
         'title':'Software Skills',
