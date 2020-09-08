@@ -47,21 +47,33 @@
 
 @media only screen and (min-width: 768px) {
   .phone-container{
-    width: 48%;
-    margin: 0 1%;
     .screen{
       border-radius: 1.8rem;
     }
+  }
+  .phone-container-1{
+    width: 48%;
+    margin: 0 26%;
+  }
+  .phone-container-2{
+    width: 48%;
+    margin: 0 1%;
   }
 }
 
 @media only screen and (min-width: 992px) {
   .phone-container{
-    width: 40%;
-    margin: 0 5%;
     .screen{
       border-radius: 2rem;
     }
+  }
+  .phone-container-1{
+    width: 40%;
+    margin: 0 30%;
+  }
+  .phone-container-2{
+    width: 40%;
+    margin: 0 5%;
   }
 }
 
