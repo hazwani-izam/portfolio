@@ -1,0 +1,144 @@
+/*  VIDEO PLAYER CONTAINER ############################### */
+.playlist-wrapper{
+	clear: both;
+}
+
+.vid-container {
+    position: relative;
+    padding-bottom: 52%;
+    height: 0;
+		clear: both;
+}
+
+.vid-container {
+	iframe, object, embed {
+	    position: absolute;
+	    top: 0;
+	    left: 0;
+	    width: 100%;
+	    height: 100%;
+	}
+}
+
+/*  VIDEOS PLAYLIST ############################### */
+.vid-list-container {
+	width: 100%;
+	overflow: hidden;
+	background: #ede8e4;
+	padding: 20px;
+}
+
+.vid-list {
+	width: 1344px;
+	position: relative;
+	top:0;
+	left: 0;
+}
+
+.vid-list-wrapper{
+		position: relative;
+}
+
+.vid-item {
+	display: block;
+	width: 250px;
+	float: left;
+	margin: 0;
+	padding: 10px 15px;
+	transition: all 0.5s;
+	.desc {
+		margin-top:8px;
+		color: $uobGrey;
+	}
+	&:hover {
+		background-color: #eee;
+		cursor: pointer;
+	}
+}
+
+.thumb {
+	overflow:hidden;
+	height: 140px;
+	background-size: cover;
+  background-position: center;
+}
+
+
+.arrows {
+	// position: relative;
+	width: 100%;
+	margin: auto;
+	height: 100%;
+  position: absolute;
+  top: 0;
+	left: 0;
+  right: 0;
+}
+
+.arrow{
+	color: $uobGrey;
+	background: $uobTaupe;
+	padding: 10px;
+	cursor: pointer;
+	width: fit-content;
+  margin: auto;
+	position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+	transition: all 0.5s;
+	z-index:100;
+	&:hover{
+		color: $uobTaupe;
+		background: $uobGrey;
+	}
+}
+
+.arrow-left {
+	left: 0px;
+	float: left;
+	-webkit-box-shadow: 3px 0px 10px -3px rgba(0,0,0,0.2);
+	-moz-box-shadow: 3px 0px 10px -3px rgba(0,0,0,0.2);
+	box-shadow: 3px 0px 10px -3px rgba(0,0,0,0.2);
+}
+
+.arrow-right {
+	right: 0px;
+	float: right;
+	-webkit-box-shadow: -3px 0px 10px -3px rgba(0,0,0,0.2);
+	-moz-box-shadow: -3px 0px 10px -3px rgba(0,0,0,0.2);
+	box-shadow: -3px 0px 10px -3px rgba(0,0,0,0.2);
+}
+
+@media (min-width: 576px) {
+	.vid-list-container {
+		padding: 20px 40px;
+	}
+	.arrow{
+		padding: 15px;
+	}
+}
+
+.ytp-playlist-menu *{
+  color: red !important;
+}
+
+.video-container{
+  position: relative;
+
+    .video-btn{
+      position: absolute;
+      bottom: 2.77%;
+      height: 1.65%;
+    }
+
+    .video-btn-1{
+      left: 48.3%;
+      width: 12%;
+    }
+
+    .video-btn-2{
+      right: 27.1%;
+      width: 12%;
+    }
+
+}
