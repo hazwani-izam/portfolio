@@ -1,6 +1,6 @@
 $sgRed: #fd5b47;
-$sgOrange: #f26f35;
-$sgYellow: #edcd42;
+$sgOrange: #fca103;
+$sgYellow: #f5cf14;
 $sgGreen: #c6d147;
 $sgBlue: #79b5db;
 $sgPurple: #b094d4;
@@ -58,6 +58,12 @@ $sgPurple: #b094d4;
 }
 
 .hello-sg{
+  .highlight{
+    color: white;
+    background: $sgRed;
+    width: fit-content;
+    padding: 0.3rem 0.8rem;
+  }
   .phone-container{
     width: 100%;
     margin: 0;
@@ -80,4 +86,57 @@ $sgPurple: #b094d4;
         color: $sgRed;
     }
   }
+}
+
+// PIE CHARTS
+
+.hello-sg{
+  #pie1{
+    .pieSlice1{
+      .pie{
+        transform: rotate(calc(360deg / 100 * 5.7));
+      }
+    }
+    .pieSlice2{
+      transform: rotate(calc(360deg / 100 * 5.7));
+      .pie{transform: rotate(calc(360deg / 100 * 19.6));}
+    }
+    .pieSlice3{
+      transform: rotate(calc(360deg / 100 * (5.7 + 19.6)));
+      .pie{transform: rotate(calc(360deg / 100 * 25.2));}
+    }
+    .pieSlice4{
+      transform: rotate(calc(360deg / 100 * (5.7 + 19.6 + 25.2)));
+      .pie{transform: rotate(calc(360deg / 100 * 15.9));}
+    }
+    .pieSlice5{
+      transform: rotate(calc(360deg / 100 * (5.7 + 19.6 + 25.2 + 15.9)));
+      .pie{transform: rotate(calc(360deg / 100 * 24.3));}
+    }
+    .pieSlice6{
+      transform: rotate(calc(360deg / 100 * (5.7 + 19.6 + 25.2 + 15.9 + 24.3)));
+      .pie{transform: rotate(calc(360deg / 100 * 9.3));}
+    }
+  }
+
+  #pie2{
+    .pieSlice1{
+      .pie{
+        transform: rotate(calc(360deg / 100 * 0.9));
+      }
+    }
+    .pieSlice2{
+      transform: rotate(calc(360deg / 100 * 0.9));
+      .pie{transform: rotate(calc(360deg / 100 * 20.6));}
+    }
+    .pieSlice3{
+      transform: rotate(calc(360deg / 100 * (0.9 + 20.6)));
+      .pie{transform: rotate(calc(360deg / 100 * 50));}
+    }
+    .pieSlice4{
+      transform: rotate(calc(360deg / 100 * (0.9 + 20.6 + 50)));
+      .pie{background-color: $sgYellow;transform: rotate(calc(360deg / 100 * 28.5));}
+    }
+  }
+
 }

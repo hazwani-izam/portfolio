@@ -1,0 +1,47 @@
+.pieContainer{
+  width: 100%;
+  // padding: 30px 20px 40px;
+  position: relative;
+  margin: 0 auto;
+}
+
+/*----------------------- PIE CHART STARTS HERE----------------------- */
+
+.pieChart{
+  width: 180px;
+  height: 180px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.pie{
+  // transition: 3s;
+  position: absolute;
+  width: 180px;
+  height: 180px;
+  border-radius: 90px;
+  clip: rect(0px, 90px, 180px, 0px);
+  animation: pie 3s 1;
+}
+
+@keyframes pie {
+  from {
+    transform: rotate(0deg);
+  }
+}
+
+.hold{
+  position: absolute;
+  width: 180px;
+  height: 180px;
+  border-radius: 90px;
+  clip: rect(0px, 180px, 180px, 90px);
+  margin: 0 auto;
+}
+
+.pieSlice1{.pie{background-color: $sgRed;}}
+.pieSlice2{.pie{background-color: $sgOrange;}}
+.pieSlice3{.pie{background-color: $sgYellow;}}
+.pieSlice4{.pie{background-color: $sgGreen;}}
+.pieSlice5{.pie{background-color: $sgBlue;}}
+.pieSlice6{.pie{background-color: $sgPurple;}}
