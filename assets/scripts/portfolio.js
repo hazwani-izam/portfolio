@@ -22,6 +22,12 @@ var _portfolioArr = [
         'tags':'Web Design'
       },
       {
+        'title':'UOB Brand Quiz',
+        'image':'UOB-Brand-Quiz@2x.png',
+        'link':'uob-brand-quiz',
+        'tags':'Web Design'
+      },
+      {
         'title':'STT Greeting Cards',
         'image':'STT.png',
         'link':'stt',
