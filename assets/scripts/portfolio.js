@@ -4,6 +4,12 @@ var _portfolioArr = [
     'title':'Portfolio',
     'portfolioItem':[
       {
+        'title':'WWF',
+        'image':'WWF@2x.png',
+        'link':'wwf',
+        'tags':'Web Design'
+      },
+      {
         'title':'UOBAM Invest',
         'image':'UOBAM-Invest.jpg',
         'link':'uobam-invest',
@@ -16,15 +22,21 @@ var _portfolioArr = [
         'tags':'Web Design'
       },
       {
-        'title':'Natura',
-        'image':'Natura@2x.jpg',
-        'link':'natura',
+        'title':'Ho Bee Land',
+        'image':'Ho-Bee-Land@2x.jpg',
+        'link':'ho-bee-land',
         'tags':'Web Design'
       },
       {
         'title':'UOB Brand Quiz',
         'image':'UOB-Brand-Quiz@2x.png',
         'link':'uob-brand-quiz',
+        'tags':'Web Design'
+      },
+      {
+        'title':'Natura',
+        'image':'Natura@2x.jpg',
+        'link':'natura',
         'tags':'Web Design'
       },
       {
