@@ -3,17 +3,17 @@ html {
 }
 
 body {
-  font-family: $SFPro;
+  font-family: $fPrimary;
   color: $white; }
 
 strong,.bold {
-  font-family: $SFProBold;
+  font-family: $fPrimaryBold;
   font-weight:500;}
 
 h1{
   font-family: $fBrush;
   margin-top: 1rem;
-  color: $peach;
+  color: $colorAccent;
   @media only screen and (min-width: 768px) {
     margin-top: 3rem
   }
@@ -21,13 +21,13 @@ h1{
 
 .font-brush{
   font-family: $fBrush;
-  color: $peach;
+  color: $colorAccent;
 }
 
 a{
   transition: all 0.5s;
   &:hover{
-    color: $peach;
+    color: $colorAccent;
   }
 }
 
@@ -40,12 +40,12 @@ h1, h2, h3, h4, h5, h6,
 
 h2, h3, h4, h5, h6,
 .h2, .h3, .h4, .h5, .h6 {
-  font-family: $SFProBold;
+  font-family: $fPrimaryBold;
 }
 
 p,li {
   margin-bottom: 10px;
-  font-family: $SFPro;
+  font-family: $fPrimary;
   font-weight: 500;
   line-height: normal;
   margin-bottom: 13px;
@@ -102,5 +102,5 @@ font-feature-settings: "liga" 0, "clig" 0;
 
 
 .txt-orange{
-  color: $peach;
+  color: $colorAccent;
 }

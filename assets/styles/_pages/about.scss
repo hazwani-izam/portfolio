@@ -10,7 +10,7 @@
     padding-left: 50px;
     ul{
       padding-left: 18px;
-      color: $brightRed;
+      color: $cPrimaryBright;
       padding-bottom: 10px;
       li{
           list-style-type: disc;
@@ -44,11 +44,11 @@
           left: 0;
           width: 15px;
           border-radius: 50%;
-          background: $peach;
+          background: $colorAccent;
         }
           &:after {
               content: ' ';
-              border-left: 2px solid $peach;
+              border-left: 2px solid $colorAccent;
               display: inline-block;
               position: absolute;
               left: 6px;
@@ -58,10 +58,10 @@
           }
           &.v-last{
               &:before{
-                  background: $peach;
+                  background: $colorAccent;
               }
               &:after{
-                  border-left: 2px solid $peach;
+                  border-left: 2px solid $colorAccent;
               }
           }
 
@@ -86,11 +86,11 @@
 .progress {
     background-color: transparent;
     border-radius: 0rem;
-    border: 1px solid $peach;
+    border: 1px solid $colorAccent;
     height: 1.1rem;
     margin-bottom: 30px;
 }
 
 .progress-bar {
-    background-color: $peach;
+    background-color: $colorAccent;
 }

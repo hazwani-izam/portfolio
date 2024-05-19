@@ -25,13 +25,13 @@
 
 .accordion{
   h3, h4, h5, h6{
-    font-family: $SFPro;
+    font-family: $fPrimary;
     margin-bottom: 5px;
   }
   h2{font-size:0.8rem;}
   h3, h4, h5, h6, p{font-size: 0.8rem;}
-  h5{color: $brightRed;}
-  h6{color: $peach;}
+  h5{color: $cPrimaryBright;}
+  h6{color: $colorAccent;}
   h2{
     position: absolute;
     left: 0;
@@ -57,8 +57,8 @@
      }
 
      &.active, &.active:hover{
-       color:$peach;
-       font-family:$SFProBold;
+       color:$colorAccent;
+       font-family:$fPrimaryBold;
      }
 
      &:hover{
@@ -97,7 +97,7 @@
   a{
     transition: 0.3s;
     &:hover{
-      color: $peach;
+      color: $colorAccent;
       transition: 0.3s;
     }
   }
@@ -116,7 +116,7 @@
     }
     h2{
       text-align: center;
-      color: $peach;
+      color: $colorAccent;
       font-family: $fBrush;
     }
   }

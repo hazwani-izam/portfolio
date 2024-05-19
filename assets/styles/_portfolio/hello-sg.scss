@@ -31,7 +31,7 @@ $sgPurple: #b094d4;
     border-radius: 100%;
   }
   .legend-2-num{
-    font-family: $SFProBold;
+    font-family: $fPrimaryBold;
   }
 }
 
@@ -80,7 +80,7 @@ $sgPurple: #b094d4;
 
   .portfolio-trigger{
     &:hover{
-        color: $peach;
+        color: $colorAccent;
     }
     &.active, &.active:hover{
         color: $sgRed;

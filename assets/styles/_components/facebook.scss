@@ -11,8 +11,8 @@
 
 .ig-story{
 
-  h3{font-family:$SFProBold; font-size: 1.0rem; margin-bottom: 2px;}
-  h4{font-family: $SFPro; font-size: 0.9rem; opacity: 0.8;}
+  h3{font-family:$fPrimaryBold; font-size: 1.0rem; margin-bottom: 2px;}
+  h4{font-family: $fPrimary; font-size: 0.9rem; opacity: 0.8;}
   position: relative;
   .ig-story-lines{
     padding: 1rem 1rem;
@@ -51,9 +51,9 @@
   color: $fbBlack;
   h2, h3, h4, h5, h6, p{margin: 0; padding: 0;}
   h3, h4, h5{color: $fbGrey;}
-  h2{font-family:$SFProBold;}
-  h5{font-family:$SFProBold;}
-  h3, h4, h6, p, li{font-family: $SFPro;}
+  h2{font-family:$fPrimaryBold;}
+  h5{font-family:$fPrimaryBold;}
+  h3, h4, h6, p, li{font-family: $fPrimary;}
   h4{line-height: 30px;}
 
   // font sizes

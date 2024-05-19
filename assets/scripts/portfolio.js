@@ -4,6 +4,36 @@ var _portfolioArr = [
     'title':'Portfolio',
     'portfolioItem':[
       {
+        'title':'Nike: Super Hoops',
+        'image':'Nike-Super-Hoops.jpg',
+        'link':'nike-super-hoops',
+        'tags':'UI/UX Design, Game Design'
+      },
+      {
+        'title':'Nike: Air Max Experiences',
+        'image':'Nike-Air-Max.jpg',
+        'link':'nike-airmax',
+        'tags':'Web Design'
+      },
+      // {
+      //   'title':'Mercedes-Benz: The Concept EQG',
+      //   'image':'Mercedes-Concept-EQG.jpg',
+      //   'link':'mercedes',
+      //   'tags':'Events'
+      // },
+      {
+        'title':'Galderma PR Video',
+        'image':'Galderma.jpg',
+        'link':'galderma',
+        'tags':'Graphic Design, Animation'
+      },
+      {
+        'title':'Nike: Run Your Run',
+        'image':'Nike-RYR.jpg',
+        'link':'nike-ryr',
+        'tags':'Web Design'
+      },
+      {
         'title':'WWF',
         'image':'WWF@2x.png',
         'link':'wwf',

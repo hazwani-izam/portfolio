@@ -1,22 +1,22 @@
 body{
-  background: linear-gradient(0deg, $darkRed 0%, $red 90%);
+  background: linear-gradient(0deg, $cPrimaryDark 0%, $cPrimary 90%);
   min-height: 100vh;
 }
 
 .bg-red-black{
-  background: linear-gradient(90deg, $black 0%, $darkRed 50%, $red 100%);
+  background: linear-gradient(90deg, $black 0%, $cPrimaryDark 50%, $cPrimary 100%);
 }
 
 .bg-darkRed-red{
-  background: linear-gradient(0deg, $darkRed 0%, $red 100%);
+  background: linear-gradient(0deg, $cPrimaryDark 0%, $cPrimary 100%);
 }
 
 .bg-darkRed-red-90{
-  background: linear-gradient(90deg, $darkRed 0%, $red 100%);
+  background: linear-gradient(90deg, $cPrimaryDark 0%, $cPrimary 100%);
 }
 
 .bg-darkRed-black{
-  background: linear-gradient(180deg, $darkRed 0%, $black 100%);
+  background: linear-gradient(180deg, $cPrimaryDark 0%, $black 100%);
   min-height: 20rem;
 }
 
@@ -84,6 +84,35 @@ body{
   background-repeat: no-repeat;
 }
 
+.bg-galderma{
+  background: url("../images/portfolio/galderma/bg.jpg");
+  background-size: cover;
+}
+
+.bg-mercedes{
+  background: url("../images/portfolio/galderma/bg.jpg");
+  background-size: cover;
+}
+
 .iphone-x {
   background-attachment: scroll;
+}
+
+// nike stuff
+
+$nikeSuperHoopsGradient: linear-gradient(0deg, rgba(238,42,123,1) 0%, rgba(65,12,93,1) 31%, rgba(45,6,74,1) 44%, rgba(29,3,60,1) 58%, rgba(20,0,52,1) 75%, rgba(18,0,50,1) 100%);
+.bg-nike-super-hoops{
+  background: url("../images/portfolio/nike-super-hoops/bg_grid.png"), $nikeSuperHoopsGradient;
+}
+
+.bg-nike-ryr{
+  background: url("../images/portfolio/nike-ryr/seamless.jpg");
+}
+
+.bg-nike-airmax{
+  background: url("../images/portfolio/nike-airmax/seamless.jpg");
+}
+
+.mw-600{
+  max-width: 600px;
 }

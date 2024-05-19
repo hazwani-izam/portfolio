@@ -9,7 +9,7 @@ var _aboutArr = [
       },
       {
         'title':'Work Experience',
-        'content':'<div class="about-timeline"> <div class="row"> <div class="col"> <ul class="v-timeline"> <li class="col"> <span class="v-timeline-icon"></span> <div class="timeline-text"> <p>Mar 2018 - Jun 2018 <br>Sep 2018 - Mar 2019</p> <div class="timeline-text-content"> <h5>Digital Designer Intern</h5> <h6>Blak Labs</h6> </div> </div> </li> <li class="col"> <span class="v-timeline-icon v-last"></span> <div class="timeline-text"> <p>Mar 2019 - Present</p> <div class="timeline-text-content"> <h5>Digital Designer</h5> <h6>Blak Labs</h6> </div> </div> </li> </ul> </div> </div> </div>'
+        'content':'<div class="about-timeline"> <div class="row"> <div class="col"> <ul class="v-timeline"> <li class="col"> <span class="v-timeline-icon"></span> <div class="timeline-text"> <p>Mar 2018 - Jun 2018 <br>Sep 2018 - Mar 2019</p> <div class="timeline-text-content"> <h5>Digital Designer Intern</h5> <h6>Blak Labs</h6> </div> </div> </li> <li class="col"> <span class="v-timeline-icon v-last"></span> <div class="timeline-text"> <p>Mar 2019 - Feb 2021</p> <div class="timeline-text-content"> <h5>Digital Designer</h5> <h6>Blak Labs</h6> </div> </div> </li> <li class="col"> <span class="v-timeline-icon v-last"></span> <div class="timeline-text"> <p>Apr 2022 - Present</p> <div class="timeline-text-content"> <h5>Senior Designer</h5> <h6>RAPP Singapore</h6> </div> </div> </li> </ul> </div> </div> </div>'
       },
       {
         'title':'Education',

@@ -1,25 +1,21 @@
 // PORTFOLIO COLORS
-$darkRed: #1c000c;
-$red: #350017;
-$brightRed: #861522;
-$peach: #ffccb3;
+$cPrimaryDark: #1c000c;
+$cPrimary: #350017;
+$cPrimaryBright: #861522;
+$colorAccent: #ffccb3;
 $white: #fff;
 $black: #000;
 $grey: #3a3a3a;
-$peach: #f8a678;
 
-$gradientRed: rgba(192,55,91,1);
-$gradientOrange: rgba(232,174,93,1);
-$gradient: linear-gradient(90deg, $gradientRed 0%, $gradientOrange 100%);
-
+$gradient: linear-gradient(90deg, rgba(192,55,91,1) 0%, rgba(232,174,93,1) 100%);
 
 // FACEBOOK COLORS
 $fbBlack: #262626;
 $fbGrey: #737373;
 
-$SFPro: 'SF-Pro','Helvetica LT','Helvetica',Helvetica,Arial,sans-serif;
-$SFProBold: 'SF-Pro-Bold','Helvetica LT','Helvetica',Helvetica,Arial,sans-serif;
-$SFProSemiBold: 'SF-Pro-SemiBold','Helvetica LT','Helvetica',Helvetica,Arial,sans-serif;
+$fPrimary: 'SF-Pro','Helvetica LT','Helvetica',Helvetica,Arial,sans-serif;
+$fPrimaryBold: 'SF-Pro-Bold','Helvetica LT','Helvetica',Helvetica,Arial,sans-serif;
+$fPrimarySemiBold: 'SF-Pro-SemiBold','Helvetica LT','Helvetica',Helvetica,Arial,sans-serif;
 $fBrush: 'Brush','Helvetica LT','Helvetica',Helvetica,Arial,sans-serif;
 
 @font-face {
@@ -73,32 +69,32 @@ a{
 }
 
 .btn-primary{
-  background-color: $darkRed;
-  border-color: $darkRed;
+  background-color: $cPrimaryDark;
+  border-color: $cPrimaryDark;
   color: $white;
 }
 
 .btn-primary:hover {
-  background-color: $red;
-  border-color: $red;
+  background-color: $cPrimary;
+  border-color: $cPrimary;
   color: $white;
 }
 
 .btn-secondary{
   background-color: transparent;
-  border-color: $peach;
-  color: $peach;
+  border-color: $colorAccent;
+  color: $colorAccent;
 }
 
 .btn-secondary:hover {
-  background-color: $peach;
-  border-color: $peach;
-  color:$darkRed;
+  background-color: $colorAccent;
+  border-color: $colorAccent;
+  color:$cPrimaryDark;
 }
 
 .btn-secondary:active{
-  border: 1px solid $peach;
-  color: $peach
+  border: 1px solid $colorAccent;
+  color: $colorAccent
 }
 
 .navbar-toggle, .navbar-toggler:focus, .navbar-toggler:active, button:focus, a, a:focus, a:active, .btn-primary:not(:disabled):not(.disabled):active, .btn-primary:not(:disabled):not(.disabled):active{
@@ -131,7 +127,7 @@ section{
   position:fixed;
   bottom:30px;
   right:30px;
-  border:2px solid $peach;
+  border:2px solid $colorAccent;
   width:50px;
   height:50px;
   display:block;
@@ -142,7 +138,7 @@ section{
   display:none;
 
   i {
-  color:$peach;
+  color:$colorAccent;
   margin:0;
   position:relative;
   left:16px;
@@ -152,11 +148,11 @@ section{
 }
 
   &:hover {
-    border:2px solid $brightRed;
+    border:2px solid $cPrimaryBright;
   }
 
   &:hover i {
-    color:$brightRed;
+    color:$cPrimaryBright;
     top:5px
   }
 
@@ -184,12 +180,12 @@ video {
 
 ::-moz-selection { /* Code for Firefox */
   color: $white;
-  background: $red;
+  background: $cPrimary;
 }
 
 ::selection {
   color: $white;
-  background: $peach;
+  background: $colorAccent;
 }
 
 /* Custom Scrollbar */
@@ -198,16 +194,16 @@ video {
 }
 
 ::-webkit-scrollbar-track {
-	background: $darkRed;
+	background: $cPrimaryDark;
 }
 
 ::-webkit-scrollbar-thumb {
-	background: $brightRed;
+	background: $cPrimaryBright;
   transition: all 0.3s;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-	background: $peach;
+	background: $colorAccent;
 }
 
 .list-margin-small{
