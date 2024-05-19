@@ -13,7 +13,7 @@ var _aboutArr = [
       },
       {
         'title':'Education',
-        'content':'<div class="about-timeline"> <div class="row"> <div class="col"> <ul class="v-timeline"> <li class="col"> <span class="v-timeline-icon"></span> <div class="timeline-text"> <p>2012 - 2015</p> <div class="timeline-text-content"> <h5>GCE ‘O’ Levels</h5> <h6>Bukit Panjang Government High School</h6> </div> </div> </li> <li class="col"> <span class="v-timeline-icon"></span> <div class="timeline-text"> <p>2016 - 2019</p> <div class="timeline-text-content"> <ul> <li> <h5>Diploma in Visual Communications and Media Design</h5> </li> <li> <h5>Diploma+ in Software Programming & Applications</h5> </li> </ul> <h6>Singapore Polytechnic</h6> </div> </div> </li> </ul> </div> </div> </div>'
+        'content':'<div class="about-timeline"> <div class="row"> <div class="col"> <ul class="v-timeline"> <li class="col"> <span class="v-timeline-icon"></span> <div class="timeline-text"> <p>2016 - 2019</p> <div class="timeline-text-content"> <ul> <li><h5>Diploma in Visual Communications and Media Design</h5></li> <li><h5>Diploma+ in Software Programming & Applications</h5></li> </ul> <h6>Singapore Polytechnic</h6> </div> </div> </li> <li class="col"> <span class="v-timeline-icon"></span> <div class="timeline-text"> <p>2012 - 2015</p> <div class="timeline-text-content"> <h5>GCE ‘O’ Levels</h5> <h6>Bukit Panjang Government High School</h6> </div> </div> </li> </ul> </div> </div> </div> '
       },
       {
         'title':'Co-Curricular Activities',
