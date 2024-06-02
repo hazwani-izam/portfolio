@@ -1,5 +1,5 @@
 body{
-  background: linear-gradient(0deg, $cPrimaryDark 0%, $cPrimary 90%);
+  background: $cBgLight;
   min-height: 100vh;
 }
 
@@ -21,7 +21,7 @@ body{
 }
 
 .first-section{
-  margin-top: 1rem;
+  margin-top: 0rem;
 }
 
 .bg-black{

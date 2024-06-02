@@ -1,8 +1,9 @@
-footer{
+#footer{
   padding: 1rem 0 2rem;
   .container{
     border-top: 1px solid $cPrimaryBright;
   }
+  h4{color: $cPrimaryDark;}
   .socials{
     display: flex;
     justify-content: flex-start;
@@ -17,7 +18,7 @@ footer{
 }
 
 @media only screen and (min-width: 768px) {
-  footer{
+  #footer{
     .socials{
       justify-content: flex-end;
       margin-top: 0;
@@ -27,3 +28,7 @@ footer{
     }
   }
 }
+
+// #footer h4{
+//     color: $cPrimaryDark;
+// }

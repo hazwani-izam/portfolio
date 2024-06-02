@@ -5,7 +5,7 @@
 }
 
 .custom-toggler .navbar-toggler-icon {
-  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(232,174,93,1)' stroke-width='3' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(246, 166, 219,1)' stroke-width='3' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
 }
 
 .navbar-dark .navbar-toggler {
@@ -61,7 +61,6 @@
     padding-left: 15px;
   }
   background: transparent;
-  color: $white;
   z-index: 999;
   position: sticky;
   top: 0;
@@ -70,35 +69,42 @@
 
   &.scrolled{
     background: $cPrimaryDark;
-    -webkit-box-shadow: 0px 3px 16px 0px rgba(0,0,0,0.75);
-    -moz-box-shadow: 0px 3px 16px 0px rgba(0,0,0,0.75);
-    box-shadow: 0px 3px 16px 0px rgba(0,0,0,0.75);
+    -webkit-box-shadow: 0px 0px 16px 0px rgba(0,0,0,0.2);
+    -moz-box-shadow: 0px 0px 16px 0px rgba(0,0,0,0.2);
+    box-shadow: 0px 0px 16px 0px rgba(0,0,0,0.2);
+    .logo-txt, .nav-item.active .nav-link{
+      background: linear-gradient(90deg, rgb(246, 166, 219) 0%, rgb(233, 239, 255) 100%);
+      -webkit-background-clip: text;
+    }
+     .nav-item .nav-link{
+       color: $cBgLight;
+       &:hover{color: $white;}
+     }
   }
 
   .nav-item{
     margin: 0;
     font-size: 1rem;
+    .nav-link{
+      color: $cPrimary;
+      text-align: center;
+      opacity: 0.5;
+      height: 100%;
+      transition: all 0.5s;
+      &:hover {
+        color: $cPrimaryBright;
+        opacity: 1;
+      }
+    }
+    &.active .nav-link{
+      font-family: $fPrimaryBold;
+      background: $gradient;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      opacity: 1;
+    }
   }
 
-  .nav-item a{
-    color: $white;
-    text-align: center;
-    opacity: 0.7;
-    height: 100%;
-    transition: all 0.5s;
-  }
-
-  .nav-item a:hover{
-    opacity: 1
-  }
-
-  .nav-item.active a{
-    font-family: $fPrimaryBold;
-    background: $gradient;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    opacity: 1;
-  }
   .navbar-toggler {
     padding: .25rem 0 .25rem .75rem;}
 

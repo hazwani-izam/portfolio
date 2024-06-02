@@ -44,11 +44,12 @@
           left: 0;
           width: 15px;
           border-radius: 50%;
-          background: $colorAccent;
+          background: $cPrimary;
+          border: 2px solid $cPrimary;
         }
           &:after {
               content: ' ';
-              border-left: 2px solid $colorAccent;
+              border-left: 2px solid $cPrimary;
               display: inline-block;
               position: absolute;
               left: 6px;
@@ -58,13 +59,18 @@
           }
           &.v-last{
               &:before{
-                  background: $colorAccent;
+                  background: $cPrimary;
               }
               &:after{
-                  border-left: 2px solid $colorAccent;
+                  border-left: 2px solid $cPrimary;
               }
           }
 
+          &.v-empty{
+              &:before{
+                  background: none;
+              }
+          }
       }
       .timeline-text{
         padding-left: 40px;
@@ -75,7 +81,19 @@
 .about{
   .accordion{
     .card-body{
-      padding: 3.25rem 3rem 1.25rem;
+      padding: 2.25rem 3rem 4rem;
+      border-radius: 0;
+      border-bottom: 1px solid $cBgDark;
+
+    }
+
+    &:last-child{
+      border: none;
+    }
+
+    h2{
+      font-size: 2rem;
+      padding-top: 1rem;
     }
   }
   li.col{
@@ -86,11 +104,11 @@
 .progress {
     background-color: transparent;
     border-radius: 0rem;
-    border: 1px solid $colorAccent;
+    border: 1px solid $cPrimaryBright;
     height: 1.1rem;
     margin-bottom: 30px;
 }
 
 .progress-bar {
-    background-color: $colorAccent;
+    background-color: $cPrimaryBright;
 }

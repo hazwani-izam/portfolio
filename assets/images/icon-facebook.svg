@@ -1,1 +1,12 @@
-<svg id="bg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 55 55"><defs><style>.cls-1{fill:url(#linear-gradient);}</style><linearGradient id="linear-gradient" y1="27.5" x2="55" y2="27.5" gradientUnits="userSpaceOnUse"><stop offset="0.01" stop-color="#c0375b"/><stop offset="1" stop-color="#e8ae5d"/></linearGradient></defs><title>icon-facebook</title><path class="cls-1" d="M27.5,55h0A27.5,27.5,0,0,0,55,27.5h0A27.5,27.5,0,0,0,27.5,0h0A27.5,27.5,0,0,0,0,27.5H0A27.5,27.5,0,0,0,27.5,55ZM20.08,22.83h3.16V19.19c0-2.61,1.24-6.69,6.69-6.69h4.91V18H31.27a1.34,1.34,0,0,0-1.4,1.53v3.31h5.05l-.58,5.64H29.87V44.41H23.24V28.47H20.08Z"/></svg>
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 55 55">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #8770ce;
+        stroke-width: 0px;
+      }
+    </style>
+  </defs>
+  <path class="cls-1" d="M27.5,55h0c15.19,0,27.5-12.31,27.5-27.5h0C55,12.31,42.69,0,27.5,0h0C12.31,0,0,12.31,0,27.5h0c0,15.19,12.31,27.5,27.5,27.5ZM20.08,22.83h3.15v-3.65c0-2.61,1.24-6.69,6.69-6.69l4.91.02v5.47h-3.57c-.58,0-1.41.29-1.41,1.54v3.31h5.05l-.58,5.64h-4.47v15.95h-6.63v-15.95h-3.15v-5.64Z"/>
+</svg>

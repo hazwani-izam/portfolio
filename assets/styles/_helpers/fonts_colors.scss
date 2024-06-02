@@ -4,7 +4,7 @@ html {
 
 body {
   font-family: $fPrimary;
-  color: $white; }
+  color: $cPrimary; }
 
 strong,.bold {
   font-family: $fPrimaryBold;
@@ -13,7 +13,7 @@ strong,.bold {
 h1{
   font-family: $fBrush;
   margin-top: 1rem;
-  color: $colorAccent;
+  color: $cPrimaryDark;
   @media only screen and (min-width: 768px) {
     margin-top: 3rem
   }
@@ -21,14 +21,11 @@ h1{
 
 .font-brush{
   font-family: $fBrush;
-  color: $colorAccent;
+  color: $cAccent;
 }
 
 a{
   transition: all 0.5s;
-  &:hover{
-    color: $colorAccent;
-  }
 }
 
 h1, h2, h3, h4, h5, h6,
@@ -102,5 +99,26 @@ font-feature-settings: "liga" 0, "clig" 0;
 
 
 .txt-orange{
-  color: $colorAccent;
+  color: $cPrimaryBright;
+}
+
+.button{
+  display: block;
+  width: fit-content;
+  border-radius: 2rem;
+
+  transition: all 0.5s;
+  cursor: pointer;
+  background: $cPrimaryDark;
+  color: $cBgLight;
+  &:hover{
+    background: $cAccent;
+    color: $cPrimaryDark;
+  }
+  a{
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    padding: .5rem 1rem;
+  }
 }

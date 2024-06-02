@@ -24,27 +24,54 @@
 // Accordion cosmetics
 
 .accordion{
+
   h3, h4, h5, h6{
     font-family: $fPrimary;
     margin-bottom: 5px;
   }
   h2{font-size:0.8rem;}
   h3, h4, h5, h6, p{font-size: 0.8rem;}
-  h5{color: $cPrimaryBright;}
-  h6{color: $colorAccent;}
+  h5{font-family: $fPrimaryBold; color: $cPrimaryDark;}
+  h6{color: $cPrimaryBright;}
   h2{
-    position: absolute;
-    left: 0;
-    right: 0;
-    bottom: 6.5%;
-    margin: 0;
+    color: $cPrimaryDark;
+    transition: all 0.5s;
+    margin-bottom: 0.3rem;
+  }
+}
+
+.timeline-bullets{
+  li, p{color: $cPrimary;}
+}
+
+.portfolio-accordion{
+  .card{
+    &:hover{
+
+      h2{color: $cAccent;}
+      .tags{color: $cBgLight}
+      .project-details{
+        background: $cPrimaryDark;
+      }
+    }
+  }
+  .project-details{
+    padding: 10px 20px;
+    background: $cBgDark;
+    width: 100%;
+    transition: all 0.5s;
+  }
+  .tags{
+    color: $cPrimary;
+    font-size: 0.6rem;
+    transition: all 0.5s;
   }
 }
 
 // Sidebar cosmetics
 
 .portfolio-trigger {
-     color:$white;
+     color:$cPrimary;
      text-decoration:none;
      opacity: 0.7;
      background: transparent;
@@ -59,12 +86,12 @@
      }
 
      &.active, &.active:hover{
-       color:$colorAccent;
+       color:$cPrimaryDark;
        font-family:$fPrimaryBold;
      }
 
      &:hover{
-       color:$white;
+       color:$cPrimaryDark;
      }
 
      @media only screen and (max-width: 991px) {
@@ -89,8 +116,6 @@
       outline: none;
       filter: none;
       box-shadow: 0 0 0 0 rgba(0, 0, 0, 0) ;
-      // outline: -webkit-focus-ring-color auto 0 ;
-      // outline: none;
     }
   }
 }
@@ -99,26 +124,25 @@
   a{
     transition: 0.3s;
     &:hover{
-      color: $colorAccent;
+      // color: $cAccent;
       transition: 0.3s;
     }
   }
   .card-body{
-    margin-top: -2rem;
-    background: rgb(0,0,0, 0.3);
-    padding: 0.3rem;
+    background: transparent;
+    padding: 0rem;
     border-radius: 0.5rem;
+    color: $cPrimary;
   }
   .card-header {
     padding: 0;
     cursor: default;
-    img{
-      width: 65%;
-      margin: auto;
-    }
+    // img{
+    //   width: 65%;
+    //   margin: auto;
+    // }
     h2{
-      text-align: center;
-      color: $colorAccent;
+      color: $cPrimaryDark;
       font-family: $fBrush;
     }
   }
@@ -141,7 +165,6 @@
   .accordion{
     h2{
       font-size:0.9rem;
-      bottom: 6.5%;
     }
   }
 }
@@ -156,7 +179,6 @@
     }
     h2{
       font-size:1.1rem;
-      bottom: 10%;
     }
   }
 }

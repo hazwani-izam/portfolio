@@ -1,50 +1,78 @@
 // PORTFOLIO COLORS
-$cPrimaryDark: #1c000c;
-$cPrimary: #350017;
-$cPrimaryBright: #861522;
-$colorAccent: #ffccb3;
+$cPrimaryDark: #2e00ff;
+$cPrimary: #3e1a96;
+$cPrimaryBright: #2b77cd;
+// $cHighlights: #2e00ff;
+$cBgDark: #cbd9fe;
+$cBgLight: #e9efff;
+$cAccent: #ffd111;
 $white: #fff;
 $black: #000;
 $grey: #3a3a3a;
 
-$gradient: linear-gradient(90deg, rgba(192,55,91,1) 0%, rgba(232,174,93,1) 100%);
+$gradient: linear-gradient(90deg, rgba(246,166,219,1) 0%, rgba(43,0,255,1) 100%);
 
 // FACEBOOK COLORS
 $fbBlack: #262626;
 $fbGrey: #737373;
 
-$fPrimary: 'SF-Pro','Helvetica LT','Helvetica',Helvetica,Arial,sans-serif;
-$fPrimaryBold: 'SF-Pro-Bold','Helvetica LT','Helvetica',Helvetica,Arial,sans-serif;
-$fPrimarySemiBold: 'SF-Pro-SemiBold','Helvetica LT','Helvetica',Helvetica,Arial,sans-serif;
+$fPrimary: 'Outfit','Helvetica LT','Helvetica',Helvetica,Arial,sans-serif;
+$fPrimaryBold: 'Outfit-Bold','Helvetica LT','Helvetica',Helvetica,Arial,sans-serif;
+$fPrimaryLight: 'Outfit-Light','Helvetica LT','Helvetica',Helvetica,Arial,sans-serif;
 $fBrush: 'Brush','Helvetica LT','Helvetica',Helvetica,Arial,sans-serif;
 
 @font-face {
-  font-family: 'SF-Pro';
-  src:  url("font/SFProText-Regular.eot") format("eot"),
-        url("font/SFProText-Regular.woff") format("woff"),
-        url("font/SFProText-Regular.ttf") format("truetype"),
-        url("font/SFProText-Regular.svg#SFProText-Regular") format("svg"); }
+  font-family: 'Outfit';
+  src:  url("font/Outfit-Regular.eot") format("eot"),
+        url("font/Outfit-Regular.woff") format("woff"),
+        url("font/Outfit-Regular.ttf") format("truetype"),
+        url("font/Outfit-Regular.svg#Outfit-Regular") format("svg"); }
 
 @font-face {
-  font-family: 'SF-Pro-Bold';
-  src:  url("font/SFProText-Bold.eot") format("eot"),
-        url("font/SFProText-Bold.woff") format("woff"),
-        url("font/SFProText-Bold.ttf") format("truetype"),
-        url("font/SFProText-Bold.svg#SFProText-Bold") format("svg"); }
+  font-family: 'Outfit-Bold';
+  src:  url("font/Outfit-Bold.eot") format("eot"),
+        url("font/Outfit-Bold.woff") format("woff"),
+        url("font/Outfit-Bold.ttf") format("truetype"),
+        url("font/Outfit-Bold.svg#Outfit-Bold") format("svg"); }
 
 @font-face {
-  font-family: 'SF-Pro-SemiBold';
-  src:  url("font/SFProText-Semibold.eot") format("eot"),
-        url("font/SFProText-Semibold.woff") format("woff"),
-        url("font/SFProText-Semibold.ttf") format("truetype"),
-        url("font/SFProText-Semibold.svg#SFProText-Semibold") format("svg"); }
+  font-family: 'Outfit-Light';
+  src:  url("font/Outfit-Light.eot") format("eot"),
+        url("font/Outfit-Light.woff") format("woff"),
+        url("font/Outfit-Light.ttf") format("truetype"),
+        url("font/Outfit-Light.svg#Outfit-Light") format("svg"); }
+
+@font-face {
+  font-family: 'Brush';
+  src:  url("font/Outfit-Bold.eot") format("eot"),
+        url("font/Outfit-Bold.woff") format("woff"),
+        url("font/Outfit-Bold.ttf") format("truetype"),
+        url("font/Outfit-Bold.svg#Outfit-Bold") format("svg"); }
+
+
 
 // @font-face {
-//   font-family: 'Brush';
+//   font-family: 'SF-Pro';
+//   src:  url("font/SFProText-Regular.eot") format("eot"),
+//         url("font/SFProText-Regular.woff") format("woff"),
+//         url("font/SFProText-Regular.ttf") format("truetype"),
+//         url("font/SFProText-Regular.svg#SFProText-Regular") format("svg"); }
+//
+// @font-face {
+//   font-family: 'SF-Pro-Bold';
 //   src:  url("font/SFProText-Bold.eot") format("eot"),
 //         url("font/SFProText-Bold.woff") format("woff"),
 //         url("font/SFProText-Bold.ttf") format("truetype"),
 //         url("font/SFProText-Bold.svg#SFProText-Bold") format("svg"); }
+//
+// @font-face {
+//   font-family: 'SF-Pro-SemiBold';
+//   src:  url("font/SFProText-Semibold.eot") format("eot"),
+//         url("font/SFProText-Semibold.woff") format("woff"),
+//         url("font/SFProText-Semibold.ttf") format("truetype"),
+//         url("font/SFProText-Semibold.svg#SFProText-Semibold") format("svg"); }
+
+
 
 @font-face {
   font-family: 'Brush';
@@ -89,19 +117,19 @@ a{
 
 .btn-secondary{
   background-color: transparent;
-  border-color: $colorAccent;
-  color: $colorAccent;
+  border-color: $cAccent;
+  color: $cAccent;
 }
 
 .btn-secondary:hover {
-  background-color: $colorAccent;
-  border-color: $colorAccent;
+  background-color: $cAccent;
+  border-color: $cAccent;
   color:$cPrimaryDark;
 }
 
 .btn-secondary:active{
-  border: 1px solid $colorAccent;
-  color: $colorAccent
+  border: 1px solid $cAccent;
+  color: $cAccent
 }
 
 .navbar-toggle, .navbar-toggler:focus, .navbar-toggler:active, button:focus, a, a:focus, a:active, .btn-primary:not(:disabled):not(.disabled):active, .btn-primary:not(:disabled):not(.disabled):active{
@@ -134,7 +162,7 @@ section{
   position:fixed;
   bottom:30px;
   right:30px;
-  border:2px solid $colorAccent;
+  border:2px solid $cPrimaryDark;
   width:50px;
   height:50px;
   display:block;
@@ -145,7 +173,7 @@ section{
   display:none;
 
   i {
-  color:$colorAccent;
+  color:$cPrimaryDark;
   margin:0;
   position:relative;
   left:16px;
@@ -192,7 +220,7 @@ video {
 
 ::selection {
   color: $white;
-  background: $colorAccent;
+  background: $cAccent;
 }
 
 /* Custom Scrollbar */
@@ -201,16 +229,16 @@ video {
 }
 
 ::-webkit-scrollbar-track {
-	background: $cPrimaryDark;
+	background: $cBgDark;
 }
 
 ::-webkit-scrollbar-thumb {
-	background: $cPrimaryBright;
+	background: $white;
   transition: all 0.3s;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-	background: $colorAccent;
+	background: $cAccent;
 }
 
 .list-margin-small{
