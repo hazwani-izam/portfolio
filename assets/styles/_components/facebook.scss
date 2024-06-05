@@ -92,6 +92,9 @@
 
   .fb-header{
     padding-top: 10px;
+    &.fb-no-copy{
+      padding-bottom: 10px;
+    }
   }
 
   .fb-footer{
@@ -107,11 +110,13 @@
     .fb-copy{
       padding-top: 20px;
       padding-bottom: 20px;
-
     }
 
     .fb-header{
       padding-top: 20px;
+      &.fb-no-copy{
+        padding-bottom: 20px;
+      }
     }
 
     .fb-footer{
