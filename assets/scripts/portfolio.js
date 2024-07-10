@@ -15,12 +15,12 @@ var _portfolioArr = [
         'link':'nike-airmax',
         'tags':'Web Design'
       },
-      // {
-      //   'title':'Mercedes-Benz: The Concept EQG',
-      //   'image':'Mercedes-Concept-EQG@2x.jpg',
-      //   'link':'mercedes',
-      //   'tags':'Events'
-      // },
+      {
+        'title':'Mercedes-Benz: The Concept EQG',
+        'image':'Mercedes-Concept-EQG@2x.jpg',
+        'link':'mercedes-eqg',
+        'tags':'Events, Live Coverage'
+      },
       {
         'title':'Galderma PR Video',
         'image':'Galderma@2x.jpg',
@@ -94,10 +94,28 @@ var _portfolioArr = [
         'tags':'Social Media'
       },
       {
+        'title':'Wilhelmsen Ships Service',
+        'image':'wilhelmsen.jpg',
+        'link':'wilhelmsen',
+        'tags':'Animation'
+      },
+      {
+        'title':'Pepsodent Siwak',
+        'image':'Pepsodent.jpg',
+        'link':'pepsodent',
+        'tags':'Social Media'
+      },
+      {
         'title':'Wolfpack',
         'image':'Wolfpack@2x.png',
         'link':'wolfpack',
         'tags':'Graphic Design'
+      },
+      {
+        'title':'Yoyic',
+        'image':'Yoyic.jpg',
+        'link':'yoyic',
+        'tags':'Social Media, Video Production'
       },
       {
         'title':'Cosmo Dinos',
