@@ -13,6 +13,12 @@
   box-shadow: 10px 10px 54px 16px rgba(0,0,0,0.17);
 }
 
+.fb.rmv-shadow, .ig-story.rmv-shadow{
+ -webkit-box-shadow: none;
+ -moz-box-shadow: none;
+ box-shadow: none;
+}
+
 
 .window {
   margin-bottom: 2rem;

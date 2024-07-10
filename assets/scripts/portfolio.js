@@ -34,6 +34,12 @@ var _portfolioArr = [
         'tags':'Web Design'
       },
       {
+        'title':'Mercedes-Benz: Service Retention',
+        'image':'Mercedes-Service.jpg',
+        'link':'mercedes-service',
+        'tags':'Social Media'
+      },
+      {
         'title':'WWF',
         'image':'WWF@2x.jpg',
         'link':'wwf',
@@ -70,22 +76,10 @@ var _portfolioArr = [
         'tags':'Web Design'
       },
       {
-        'title':'STT Greeting Cards',
+        'title':'ST Telemedia Greeting Cards',
         'image':'STT.png',
         'link':'stt',
         'tags':'Graphic Design, Animation'
-      },
-      {
-        'title':'EDEN Group',
-        'image':'EDEN-Group.jpg',
-        'link':'eden-group',
-        'tags':'Branding'
-      },
-      {
-        'title':'Hello Singapore',
-        'image':'Hello-Singapore.png',
-        'link':'hello-sg',
-        'tags':'App Design'
       },
       {
         'title':'VITAGEN Social Media',
@@ -94,10 +88,22 @@ var _portfolioArr = [
         'tags':'Social Media'
       },
       {
+        'title':'Hello Singapore',
+        'image':'Hello-Singapore.png',
+        'link':'hello-sg',
+        'tags':'App Design'
+      },
+      {
         'title':'Wilhelmsen Ships Service',
         'image':'wilhelmsen.jpg',
         'link':'wilhelmsen',
         'tags':'Animation'
+      },
+      {
+        'title':'EDEN Group',
+        'image':'EDEN-Group.jpg',
+        'link':'eden-group',
+        'tags':'Branding'
       },
       {
         'title':'Pepsodent Siwak',
