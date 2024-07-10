@@ -95,7 +95,7 @@ var _portfolioArr = [
       },
       {
         'title':'Wilhelmsen Ships Service',
-        'image':'wilhelmsen.jpg',
+        'image':'Wilhelmsen.jpg',
         'link':'wilhelmsen',
         'tags':'Animation'
       },
